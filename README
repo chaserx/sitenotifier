@@ -1,3 +1,6 @@
 # Site Notifier
 
 a rails 3 app to experiment with side wide notifications 
+
+
+credit to Ryan Bates for Railscast #103 http://railscasts.com/episodes/103-site-wide-announcements
