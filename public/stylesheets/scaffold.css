@@ -56,14 +56,15 @@ div.field, div.actions {
 }
 
 #announcement {
-	border: 1px solid #191919;
-	background-color: #ccc;
+  background-color: #ff9c08;
+	color: #fff;
 	border-radius: 4px;
+  border: 1px solid #999;
+	margin: 0 auto;
+	padding: 0.65em;
 }
-#announcement p{
-	margin: 1em;
-	color: #191919;
-	font-weight: bold;
+#announcement p, #announcement h3{
+  margin: 1em;
 }
 
 #footer {
@@ -76,18 +77,4 @@ div.field, div.actions {
 	text-align: right;
 	margin: 1em;
 }
-.top{
-	background-color: #ff9c08;
-	color: #fff;
-	border-radius: 4px;
-	border-color: #fff;
-	width: 98%;
-	margin: 0 auto;
-}
-div#announcement div.top p{
-	color: #fff;
-}
-div#announcement div.top h3{
-	color: #fff;
-	margin: 1em;
-}
+
