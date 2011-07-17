@@ -54,3 +54,40 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+#announcement {
+	border: 1px solid #191919;
+	background-color: #ccc;
+	border-radius: 4px;
+}
+#announcement p{
+	margin: 1em;
+	color: #191919;
+	font-weight: bold;
+}
+
+#footer {
+	margin: 0 auto;
+	font-size: 90%;
+	padding: 1em;
+	text-align: center;
+}
+.right{
+	text-align: right;
+	margin: 1em;
+}
+.top{
+	background-color: #ff9c08;
+	color: #fff;
+	border-radius: 4px;
+	border-color: #fff;
+	width: 98%;
+	margin: 0 auto;
+}
+div#announcement div.top p{
+	color: #fff;
+}
+div#announcement div.top h3{
+	color: #fff;
+	margin: 1em;
+}

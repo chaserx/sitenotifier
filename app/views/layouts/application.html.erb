@@ -10,14 +10,23 @@
   
   <% unless current_announcements.empty? %>
   <div id="announcement">
-    <% for announcement in current_announcements %>
-      <p><%=h announcement.message %></p>
-    <% end %>
-    <p><%= link_to "ignore this announcement", dismiss_path, :remote => true %></p>
+    <p class="right">x <%= link_to "close", dismiss_path, :remote => true %></p>
+    <div class="top">
+        <h3>An Important Message:</h3>
+        <% for announcement in current_announcements %>
+          <p><%=h announcement.message %></p>
+        <% end %>
+    </div>
+    
+    
   </div>
   <% end %>
   
   <%= yield %>
+  
+  <div id="footer">
+    <p>This is the Footer</p>
+  </div>
 
 </body>
 </html>
