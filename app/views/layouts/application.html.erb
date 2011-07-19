@@ -7,6 +7,14 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <ul class="hmenu">
+    <%= render 'devise/menu/registration_items' %>
+    <%= render 'devise/menu/login_items' %>
+  </ul>
+  
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
   
   <% unless current_announcements.empty? %>
   <div id="announcement">
@@ -19,6 +27,8 @@
     </div>
   </div>
   <% end %>
+  
+  <%# add alerts %>
   
   <%= yield %>
   

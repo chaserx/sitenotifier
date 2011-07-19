@@ -1,0 +1,31 @@
+<h1>Listing alerts</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+    <th>Read</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alerts.each do |alert| %>
+  <tr>
+    <td><%= alert.message %></td>
+    <td><%= alert.starts_at %></td>
+    <td><%= alert.ends_at %></td>
+    <td><%= alert.read %></td>
+    <td><%= alert.user_id %></td>
+    <td><%= link_to 'Show', alert %></td>
+    <td><%= link_to 'Edit', edit_alert_path(alert) %></td>
+    <td><%= link_to 'Destroy', alert, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alert', new_alert_path %>
